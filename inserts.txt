@@ -1,0 +1,66 @@
+INSERT INTO UserApp (username, password, email, role)
+VALUES 
+('dreal', '12345', 'dreal@gmail.com', 'funcionario'),
+('kwilliams', 'kimh32', 'kwilliams@gmail.com', 'funcionario'),
+('jenni_h', 'wcl01', 'jhermoso@gmail.com', 'funcionario'),
+('luisr', 'carros1', 'luis@gmail.com', 'funcionario'),
+('vivi_ac', 'sfAna21', 'vacosta@gmail.com', 'funcionario'),
+('Maria01', '09542F', 'maria01@gmail.com', 'propietario'),
+('gabi_h', '97878', 'gabih@gmail.com', 'propietario'),
+('dayrom', 'mediaok', 'dayroM@gmail.com', 'propietario'),
+('cbenitez', 'col232', 'cbenitez@gmail.com', 'propietario'),
+('aleja54', 'ofas32', 'aleja54@gmail.com', 'propietario'),
+('b_pittman', 'pompey10', 'pittman10@gmail.com', 'veterinario'),
+('kim_h', 'usa321', 'hunter_k@gmail.com', 'veterinario'),
+('mateo_f', 'imola13', 'fajardo_m@gmail.com', 'veterinario'),
+('alonso456', 'lok976', 'alonso97@gmail.com', 'veterinario'),
+('alexa_l', 'hori867', 'alexa_l@gmail.com', 'veterinario')
+
+INSERT INTO Owner (username, person_id, name, address, heighborhood)
+VALUES 
+('Maria01', 125351324, 'Maria López', 'Calle Y # J-F', 'Modelia'),
+('gabi_h', 128362572, 'Gabriela Hurtado', 'Calle K # R-T', 'Quinta Paredes'),
+('dayrom', 123456789, 'Dayro Moreno', 'Carrera R #K-D', 'Chapinero'),
+('cbenitez', 114567756, 'Carlos Benitez', 'Calle J #U-E', 'Normandía'),
+('aleja54', 128214275, 'Alejandra Pulido', 'Carrera M # B-C', 'Salitre')
+
+INSERT INTO Official (username, name)
+VALUES 
+('dreal', 'David Real'),
+('kwilliams', 'Kenny Williams'),
+('jenni_h', 'Jenni Hermoso'),
+('luisr', 'Luis Rodallega'),
+('vivi_ac', 'Viviana Acosta')
+
+INSERT INTO Vet (username, name, address, heighborhood)
+VALUES 
+('b_pittman', 'Brett Pittman', 'Calle G # V-B', 'Colina'),
+('kim_h', 'Kim Hunter', 'Calle K # R-S', 'Chicó'),
+('mateo_f', 'Mateo Fontecha', 'Carrera S # B-j', 'Salitre'),
+('alonso456', 'Fernando Alonso', 'Carrera P # R-C', 'Normandía'),
+('alexa_l', 'Alexandra López', 'Carrera K # J-Z', 'Restrepo')
+
+INSERT INTO Pet (pet_id, microchip, name, species, race, size, sex, picture, owner_id)
+VALUES
+(1, '11111', 'Lulu', 'Perro', 'Pug', 'Pequeño', 'Hembra', 'Lulu.jpg', 125351324),
+(2, '12222', 'Mia', 'Perro', 'Golden Retriever', 'Grande', 'Hembra', 'Mia.jpg', 128362572),
+(3, '12333', 'Donato', 'Gato', 'Persa', 'Pequeño', 'Macho', 'Donato.jpg', 123456789),
+(4, '12344', 'Oliver', 'Perro', 'Husky', 'Mediano', 'Macho', 'Oliver.jpg', 114567756),
+(5, '12345', 'Oliva', 'Gato', 'Ragdoll', 'Pequeño', 'Macho', 'Oliva.jpg', 128214275)
+
+INSERT INTO Visit (visit_id, created_at, type, description, vet_id, pet_id)
+VALUES
+(1, '30/04/21', 'General', '........', 'Brett Pittman', '1'),
+(2, '12/02/21', 'General', '........', 'Kim Hunter', '2'),
+(3, '17/05/20', 'General', '........', 'Mateo Fontecha', '3'),
+(4, '26/08/21', 'General', '........', 'Fernando Alonso', '4'),
+(5, '04/11/20', 'General', '........', 'Alexandra López', '5')
+
+INSERT INTO PetCase (case_id, created_at, type, description, pet_id)
+VALUES
+(1, '30/04/21', 'General', '........', '1'),
+(2, '12/02/21', 'General', '........', '2'),
+(3, '17/05/20', 'General', '........', '3'),
+(4, '26/08/21', 'General', '........', '4'),
+(5, '04/11/20', 'General', '........', '5')
+
