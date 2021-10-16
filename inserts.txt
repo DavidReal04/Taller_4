@@ -50,17 +50,17 @@ VALUES
 
 INSERT INTO Visit (visit_id, created_at, type, description, vet_id, pet_id)
 VALUES
-(1, '30/04/21', 'General', '........', 'Brett Pittman', '1'),
-(2, '12/02/21', 'General', '........', 'Kim Hunter', '2'),
-(3, '17/05/20', 'General', '........', 'Mateo Fontecha', '3'),
-(4, '26/08/21', 'General', '........', 'Fernando Alonso', '4'),
-(5, '04/11/20', 'General', '........', 'Alexandra López', '5')
+(1, '30/04/21', 'Control', '........', 'Brett Pittman', '1'),
+(2, '12/02/21', 'Control', '........', 'Kim Hunter', '2'),
+(3, '17/05/20', 'Control', '........', 'Mateo Fontecha', '3'),
+(4, '26/08/21', 'Control', '........', 'Fernando Alonso', '4'),
+(5, '04/11/20', 'Control', '........', 'Alexandra López', '5')
 
 INSERT INTO PetCase (case_id, created_at, type, description, pet_id)
 VALUES
-(1, '30/04/21', 'General', '........', '1'),
-(2, '12/02/21', 'General', '........', '2'),
-(3, '17/05/20', 'General', '........', '3'),
-(4, '26/08/21', 'General', '........', '4'),
-(5, '04/11/20', 'General', '........', '5')
+(1, '30/04/21', 'Perdida', '........', '1'),
+(2, '12/02/21', 'Perdida', '........', '2'),
+(3, '17/05/20', 'Perdida', '........', '3'),
+(4, '26/08/21', 'Perdida', '........', '4'),
+(5, '04/11/20', 'Perdida', '........', '5')
 
